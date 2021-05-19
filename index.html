@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PWA - AOS</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="manifest" href="/manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="white"/>
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />  
+  <link rel="apple-touch-icon" href="images/man.png">   
+  <meta name="theme-color" content="white"/>  
+  <meta name="apple-mobile-web-app-capable" content="yes">  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta name="apple-mobile-web-app-title" content="Hello World"> 
+  <meta name="msapplication-TileImage" content="images/man.png">  
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+</head>
+<body data-aos="zoom-in" class="fullscreen">
+  <div class="container">
+    <div class="content">
+      <h1 data-aos-delay="1000" data-aos="flip-right">Progressive Web App</h1>
+      <span data-aos-delay="500" data-aos="fade-in"></span>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+      const newPrompt = prompt('Enter Name : ')
+      let nameInput = document.querySelector('.content span');
+      let body = document.querySelector('body');
+
+      body.style.backgroundColor = 'black';
+      nameInput.innerHTML = `Hello ${newPrompt}`;
+    })
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
