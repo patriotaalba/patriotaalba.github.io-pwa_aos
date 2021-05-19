@@ -1,10 +1,10 @@
 
 var cacheName = 'hello-pwa';
 var filesToCache = [
-  '/',
-  '/index.html',
-  '/css/style.css',
-  '/js/main.js'
+  '/patriotaalba.github.io/pwa_aos/',
+  '/patriotaalba.github.io/pwa_aos/index.html',
+  '/patriotaalba.github.io/pwa_aos/css/style.css',
+  '/patriotaalba.github.io/pwa_aos/js/main.js'
 ];
 
 /* Start the service worker and cache all of the app's content */
